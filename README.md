@@ -49,13 +49,13 @@ This will download the MNIST dataset, train the MLP and create a plot with the t
 
 To customize the training parameters, use the following options:
 
-- `--hidden_dim`: List of hidden layer dimensions. Default: `[128, 64, 32]`. This creates three hidden layers with the dimensions 128, 64, and 32.
+- `--hidden_dim`: List of hidden layer dimensions. Default: `[128, 64]`. This creates three hidden layers with the dimensions 128 and 64.
 - `--activation`: Activation function to use (`sigmoid`, `tanh`, `relu`). Default: `sigmoid`.
 - `--epochs`: Number of training epochs. Default: `50`.
 - `--alpha`: Learning rate. Default: `0.1`.
 - `--epsilon`: Early stopping criterion. Default: `1e-4`.
 - `--batch_size`: Size of each training batch. Default: `64`.
-- `--lambda_reg`: Regularization parameter. Default: `1e-4`.
+- `--lambda_reg`: Regularization parameter. Default: `1e-3`.
 - `--show_plots`: Display training plots. Default: `False`.
 
 ## Code Explanation
