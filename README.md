@@ -22,12 +22,14 @@ This project implements a multi-layered perceptron (MLP) from scratch using only
 ## Installation
 
 1. Clone the repository:
+
    ```sh
    git clone https://github.com/nicholasbaard/Multi-Layered-Perceptron.git
    cd Multi-Layered-Perceptron
    ```
 
 2. Install the required dependencies:
+
    ```sh
    pip install -r requirements.txt
    ```
@@ -35,13 +37,16 @@ This project implements a multi-layered perceptron (MLP) from scratch using only
 ## Usage
 
 Run the training script with default parameters:
+
 ```sh
 cd src
 python main.py
 ```
+
 This will download the MNIST dataset, train the MLP and create a plot with the training and testing results.
 
 ### Options
+
 To customize the training parameters, use the following options:
 
 - `--hidden_dim`: List of hidden layer dimensions. Default: `[128, 64, 32]`. This creates three hidden layers with the dimensions 128, 64, and 32.
@@ -76,11 +81,13 @@ The `backpropagate` method calculates the gradients of the loss function with re
 The `train` method handles the training loop, including forward pass, backpropagation, and metrics computation. It supports early stopping based on the change in loss.
 
 ![gradient_descent](plots/gradient_descent.png)
+
 #### Prediction
 
 The `predict` method performs inference on new data, returning the predicted class labels.
 
 ## Results
+
 Here are the results from training using the default parameters:
 ![mlp_mnist](plots/mlp_mnist.png)
 
