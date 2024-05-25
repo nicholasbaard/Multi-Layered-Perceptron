@@ -17,7 +17,7 @@
 
 ## Overview
 
-This project implements a multi-layered perceptron (MLP) from scratch using only NumPy. One unique aspect of this implementation is that you can specify any number of hidden dimensions with arbitrary lengths, allowing you to build neural network architectures with varying complexities. It is trained and evaluated on the MNIST dataset.
+This project implements a multi-layered perceptron (MLP) from scratch using only NumPy. One unique aspect of this implementation is that you can specify any number of hidden dimensions with arbitrary lengths, allowing you to build feed-forward neural network architectures with varying complexities. It is trained and evaluated on the MNIST dataset.
 
 ## Installation
 
