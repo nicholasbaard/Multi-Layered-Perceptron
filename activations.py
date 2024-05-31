@@ -9,12 +9,17 @@ class Sigmoid:
         # Sigmoid function
         return 1/(1 + np.exp(-x))
     
-class Softmax:
+class Softmaxzero:
     # Softmax activation function
     def __call__(self, x):
         # Softmax function
         return np.exp(x)/np.sum(np.exp(x), axis=0, keepdims=True)
-
+    
+class Softmaxone:
+    # Softmax activation function
+    def __call__(self, x):
+        # Softmax function
+        return np.exp(x)/np.sum(np.exp(x), axis=1, keepdims=True)
 class Tanh:
     # Hyperbolic tangent activation function
     def __call__(self, x, derivative=False):

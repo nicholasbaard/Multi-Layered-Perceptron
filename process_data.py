@@ -6,6 +6,7 @@ from typing import Tuple
 
 from utils import one_hot_encode
 
+
 def get_mnist() -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     # Download the MNIST dataset
     # Ensure the directory exists
@@ -46,4 +47,5 @@ def get_mnist() -> Tuple[np.ndarray, np.ndarray, np.ndarray, np.ndarray]:
     return x_train, x_test, y_train, y_test
 
 if __name__ == "__main__":
+    
     get_mnist()
